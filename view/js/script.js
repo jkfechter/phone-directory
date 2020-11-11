@@ -34,3 +34,14 @@ emailInput.maxlength = 40;
 emailInput.type = 'email';
 
 //show an error div with id 'error' if any error or empty fields
+const inputErrorMessageDiv = document.getElementById('error');
+function showError() {
+    if (!nameInput.validity.valid 
+        || !mobileInput.validity.valid 
+        || !emailInput.validity.valid 
+        || !nameInput.validity.valueMissing 
+        || !mobileInput.validity.valueMissing 
+        || !emailInput.validity.valueMissing ) {
+            inputErrorMessageDiv.style.display
+        }
+}
